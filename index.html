@@ -6,18 +6,13 @@
   <a-scene embedded arjs=’sourceType: webcam;’>
       <a-marker preset=’hiro’>
         <!-- Adding an OBJ file to an AR Project-->
-	      <a-scene>
-  <a-assets>
-    <a-asset-item id="tree-obj" src="/github.obj"></a-asset-item>
-    <a-asset-item id="tree-mtl" src="/github.mtl"></a-asset-item>
-  </a-assets>
-
-  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
-</a-scene>
 <!--          <a-entity 
             obj-model=”obj: url(/github.obj); 
             mtl: url(/github.mtl)”>
         </a-entity> -->
+	      <a-entity 
+collada-model=”url(/github.dae)”>
+</a-entity>
               
       </a-marker>
   <a-entity camera>
